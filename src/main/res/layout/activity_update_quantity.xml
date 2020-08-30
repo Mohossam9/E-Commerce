@@ -1,0 +1,95 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".update_quantity">
+
+
+    <TextView
+        android:id="@+id/currentquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your current Quantity"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="15dp"
+        tools:layout_editor_absoluteX="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/currentquantityTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="35dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/currentquantity"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <TextView
+        android:id="@+id/newquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your new quantity'"
+        app:layout_constraintTop_toBottomOf="@id/dbquantity"
+        tools:layout_editor_absoluteX="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/newquantityTxt"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/dbquantityTxt"
+        app:layout_constraintStart_toEndOf="@id/newquantity"
+        tools:layout_editor_absoluteX="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/dbquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The available Quantity"
+        app:layout_constraintTop_toBottomOf="@id/currentquantity"
+        tools:layout_editor_absoluteX="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/dbquantityTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@id/currentquantityTxt"
+        app:layout_constraintStart_toEndOf="@id/dbquantity"
+        tools:layout_editor_absoluteX="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/updatequantityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Quantity"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="228dp"
+        app:layout_constraintTop_toBottomOf="@id/newquantity"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

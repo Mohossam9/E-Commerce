@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Laptopsid"
+        android:title="Laptops" >
+        <menu >
+            <item
+                android:id="@+id/Delllaptopid"
+                android:title="Dell" />
+            <item
+                android:id="@+id/Lenovolaptopid"
+                android:title="Lenovo" />
+            <item
+                android:id="@+id/Hplaptopid"
+                android:title="Hp" />
+            <item
+                android:id="@+id/Asuslaptopid"
+                android:title="Asus" />
+            <item
+                android:id="@+id/Toshibalaptopid"
+                android:title="Toshiba" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/MobileDevicesid"
+        android:title="Mobile devices" >
+        <menu >
+            <item
+                android:id="@+id/Samsungmobileid"
+                android:title="Samsung" />
+            <item
+                android:id="@+id/Huawaimobileid"
+                android:title="Huawi" />
+            <item
+                android:id="@+id/Nokiamobileid"
+                android:title="Nokia" />
+            <item
+                android:id="@+id/Iphonemobileid"
+                android:title="Iphone" />
+            <item
+                android:id="@+id/Htcmobileid"
+                android:title="Htc" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/Accessoriesid"
+        android:title="Accessories" >
+        <menu >
+            <item
+                android:id="@+id/Menaccessoriesid"
+                android:title="Men" />
+            <item
+                android:id="@+id/Womenaccessoriesid"
+                android:title="Women" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/Clothesid"
+        android:title="Clothes" >
+        <menu >
+            <item
+                android:id="@+id/Menclothesid"
+                android:title="Men" />
+            <item
+                android:id="@+id/Womenclothesid"
+                android:title="Women" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/Perfumesid"
+        android:title="Perfumes" >
+        <menu >
+            <item
+                android:id="@+id/Menperfumesid"
+                android:title="Men" />
+            <item
+                android:id="@+id/Womenperfumesid"
+                android:title="Women" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/Carsid"
+        android:title="Cars" >
+        <menu >
+            <item
+                android:id="@+id/Bmwcarid"
+                android:title="Bmw" />
+            <item
+                android:id="@+id/Mercedescarid"
+                android:title="Mercedes" />
+            <item
+                android:id="@+id/Hyundaicarid"
+                android:title="Hyundai" />
+            <item
+                android:id="@+id/Kiacarid"
+                android:title="Kia" />
+            <item
+                android:id="@+id/Skodacarid"
+                android:title="Skoda" />
+            <item
+                android:id="@+id/Jeepcarid"
+                android:title="Jeep" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/Booksid"
+        android:title="Books" >
+        <menu >
+            <item
+                android:id="@+id/Romancebookid"
+                android:title="Romance" />
+            <item
+                android:id="@+id/Dramabookid"
+                android:title="Drama" />
+            <item
+                android:id="@+id/Sciencebookid"
+                android:title="Science" />
+            <item
+                android:id="@+id/CrimeandDetectivebookid"
+                android:title="Crime and Detective" />
+            <item
+                android:id="@+id/Healthbookid"
+                android:title="Health" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.actionbar"
+    tools:context=".Home_Activity">
+
+
+    <EditText
+        android:id="@+id/searchtxt_homaactivity_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/productslistview_homeactivity_id"
+        android:layout_width="410dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchtxt_homaactivity_id">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/LogOutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_button"
+        android:padding="10dp"
+        android:text="Log Out"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productslistview_homeactivity_id" />
+
+    <Button
+        android:id="@+id/Searchbybarcodebtn_homeActivity_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/edit_button"
+        android:text="BarCode"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/searchtxt_homaactivity_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Searchbyvoicebtn_homeActivity_id"
+        android:layout_width="77dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/edit_button"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/searchtxt_homaactivity_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/voice" />
+
+    <Button
+        android:id="@+id/Showcartbtn_HomeActivity_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_button"
+        android:padding="10dp"
+        android:text="Show Cart"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/LogOutbtn"
+        app:layout_constraintTop_toBottomOf="@id/productslistview_homeactivity_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

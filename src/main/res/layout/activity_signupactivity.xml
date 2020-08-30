@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/avatar_2155431_640"
+    tools:context=".signupactivity">
+
+
+    <TextView
+        android:id="@+id/customernamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Name"
+        android:textColor="#3949AB"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/usernamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="User Name"
+        android:textColor="#3949AB"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/customernamelabel"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/passwordlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Password"
+        android:textColor="#3949AB"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/usernamelabel"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/birthdatelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Birthdate"
+        android:textColor="#3949AB"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/passwordlabel"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/genderlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Gender"
+        android:textColor="#3949AB"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/birthdatelabel"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/joblabel"
+        android:layout_width="34dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="40dp"
+        android:text="job"
+        android:textColor="#3949AB"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/genderlabel"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <Button
+        android:id="@+id/Registerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/edit_button"
+        android:padding="10dp"
+        android:text="Regist"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="125dp"
+        app:layout_constraintTop_toBottomOf="@id/joblabel" />
+
+    <EditText
+        android:id="@+id/customernametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#3949AB"
+        android:textColorHint="#81000000"
+        app:layout_constraintStart_toEndOf="@id/customernamelabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#3949AB"
+        android:textColorHint="#81000000"
+        app:layout_constraintStart_toEndOf="@id/usernamelabel"
+        app:layout_constraintTop_toBottomOf="@id/customernametxt" />
+
+    <EditText
+        android:id="@+id/passwordtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:inputType="textPersonName|textPassword"
+        android:textColor="#3949AB"
+        android:textColorHint="#81000000"
+        app:layout_constraintStart_toEndOf="@id/passwordlabel"
+        app:layout_constraintTop_toBottomOf="@id/usernametxt" />
+
+    <EditText
+        android:id="@+id/birthdatetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="#3949AB"
+        android:textColorHint="#81000000"
+        app:layout_constraintStart_toEndOf="@id/birthdatelabel"
+        app:layout_constraintTop_toBottomOf="@id/passwordtxt" />
+
+    <RadioGroup
+        android:id="@+id/gendergroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        tools:layout_editor_absoluteX="125dp"
+        app:layout_constraintStart_toEndOf="@id/genderlabel"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/edit_text_border"
+        app:layout_constraintTop_toBottomOf="@+id/birthdatetxt">
+
+        <RadioButton
+            android:id="@+id/maleradiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:shadowColor="#3949AB"
+            android:text="Male"
+            android:textColor="#3949AB"
+            android:textColorHint="#3949AB" />
+
+        <RadioButton
+            android:id="@+id/Femaleradiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:text="Female"
+            android:textColor="#3949AB" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/jobtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#3949AB"
+        android:textColorHint="#81000000"
+        app:layout_constraintStart_toEndOf="@id/joblabel"
+        app:layout_constraintTop_toBottomOf="@id/gendergroup" />
+
+    <TextView
+        android:id="@+id/Q1_signup_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="What is your best friend ?"
+        android:textColor="#3949AB"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/joblabel"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/Q2_signup_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="What is your uncle name?"
+        android:textColor="#3949AB"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/Q1_signup_id"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <EditText
+        android:id="@+id/Question1answertxt_signup_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="You Answer"
+        android:inputType="textPersonName"
+        android:textColor="#3949AB"
+        android:textColorHint="#81000000"
+        app:layout_constraintTop_toBottomOf="@id/Q1_signup_id"
+        tools:layout_editor_absoluteX="125dp" />
+
+    <EditText
+        android:id="@+id/Question2answertxt_signup_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="You Answer"
+        android:inputType="textPersonName"
+        android:textColor="#3949AB"
+        android:textColorHint="#81000000"
+        app:layout_constraintTop_toBottomOf="@id/Q2_signup_id"
+        tools:layout_editor_absoluteX="125dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

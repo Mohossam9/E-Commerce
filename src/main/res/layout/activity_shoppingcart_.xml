@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/totalprice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shoppingcart_Activity">
+
+    <ListView
+        android:id="@+id/mycartlistview_shoppingcart_id"
+        android:layout_width="410dp"
+        android:layout_height="526dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/totalprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price is"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="558dp"
+        app:layout_constraintTop_toBottomOf="@id/mycartlistview_shoppingcart_id"
+        android:layout_marginTop="3dp"/>
+
+
+    <TextView
+        android:id="@+id/totalpriceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="561dp"
+        app:layout_constraintTop_toBottomOf="@id/mycartlistview_shoppingcart_id"
+        app:layout_constraintStart_toEndOf="@id/totalprice"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="3dp"/>
+
+    <Button
+        android:id="@+id/sumbit_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Order"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="611dp"
+        app:layout_constraintTop_toBottomOf="@id/totalprice"
+        android:layout_marginTop="5dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
